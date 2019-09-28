@@ -1,0 +1,29 @@
+{
+  "name": "styled-assists",
+  "version": "1.0.0",
+  "description": "Styled Component Primitives for rapid prototyping in React!",
+  "keywords": [
+    "flex",
+    "flexbox",
+    "styled",
+    "react",
+    "css",
+    "css-in-js",
+    "styled-components"
+  ],
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "George Tyshchenko // Abstractpoint",
+  "license": "MIT",
+  "devDependencies": {
+    "bup": "^5.0.1",
+    "jest": "^24.9.0",
+    "jest-styled-components": "^6.3.3",
+    "react-test-renderer": "^16.10.0"
+  },
+  "peerDependencies": {
+    "styled-components": "^4.4.0"
+  }
+}
