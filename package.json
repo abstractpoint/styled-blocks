@@ -13,17 +13,37 @@
   ],
   "main": "src/index.js",
   "scripts": {
+    "lint": "eslint . --cache --fix",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "George Tyshchenko // Abstractpoint",
   "license": "MIT",
   "devDependencies": {
     "bup": "^5.0.1",
+    "eslint": "^6.4.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jest": "^22.17.0",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.14.3",
+    "husky": ">=1",
     "jest": "^24.9.0",
     "jest-styled-components": "^6.3.3",
+    "lint-staged": ">=8",
     "react-test-renderer": "^16.10.0"
   },
   "peerDependencies": {
     "styled-components": "^4.4.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ]
   }
 }
