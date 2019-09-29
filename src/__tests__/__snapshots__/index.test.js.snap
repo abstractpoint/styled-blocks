@@ -1,0 +1,288 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Primitives Styled components Renders Box component 1`] = `
+.c0 {
+  color: red;
+}
+
+@media (min-width:10) {
+  .c0 {
+    color: green;
+  }
+}
+
+@media (min-width:20) {
+  .c0 {
+    color: blue;
+  }
+}
+
+<div
+  className="c0"
+>
+  test
+</div>
+`;
+
+exports[`Primitives Styled components Renders Col component 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  color: red;
+}
+
+@media (min-width:10) {
+  .c0 {
+    color: green;
+  }
+}
+
+@media (min-width:20) {
+  .c0 {
+    color: blue;
+  }
+}
+
+<div
+  className="c0"
+>
+  test
+</div>
+`;
+
+exports[`Primitives Styled components Renders Grid component 1`] = `
+.c0 {
+  display: grid;
+  color: red;
+}
+
+@media (min-width:10) {
+  .c0 {
+    color: green;
+  }
+}
+
+@media (min-width:20) {
+  .c0 {
+    color: blue;
+  }
+}
+
+<div
+  className="c0"
+>
+  test
+</div>
+`;
+
+exports[`Primitives Styled components Renders Inline component 1`] = `
+.c0 {
+  display: inline;
+  color: red;
+}
+
+@media (min-width:10) {
+  .c0 {
+    color: green;
+  }
+}
+
+@media (min-width:20) {
+  .c0 {
+    color: blue;
+  }
+}
+
+<div
+  className="c0"
+>
+  test
+</div>
+`;
+
+exports[`Primitives Styled components Renders InlineBlock component 1`] = `
+.c0 {
+  display: inline-block;
+  color: red;
+}
+
+@media (min-width:10) {
+  .c0 {
+    color: green;
+  }
+}
+
+@media (min-width:20) {
+  .c0 {
+    color: blue;
+  }
+}
+
+<div
+  className="c0"
+>
+  test
+</div>
+`;
+
+exports[`Primitives Styled components Renders InlineCol component 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  color: red;
+}
+
+@media (min-width:10) {
+  .c0 {
+    color: green;
+  }
+}
+
+@media (min-width:20) {
+  .c0 {
+    color: blue;
+  }
+}
+
+<div
+  className="c0"
+>
+  test
+</div>
+`;
+
+exports[`Primitives Styled components Renders InlineRow component 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  color: red;
+}
+
+@media (min-width:10) {
+  .c0 {
+    color: green;
+  }
+}
+
+@media (min-width:20) {
+  .c0 {
+    color: blue;
+  }
+}
+
+<div
+  className="c0"
+>
+  test
+</div>
+`;
+
+exports[`Primitives Styled components Renders Row component 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  color: red;
+}
+
+@media (min-width:10) {
+  .c0 {
+    color: green;
+  }
+}
+
+@media (min-width:20) {
+  .c0 {
+    color: blue;
+  }
+}
+
+<div
+  className="c0"
+>
+  test
+</div>
+`;
+
+exports[`Primitives Styled components Renders component with multiple breakpoints 1`] = `
+.c0 {
+  display: block;
+  color: red;
+}
+
+@media (min-width:10) {
+  .c0 {
+    color: green;
+  }
+}
+
+@media (min-width:20) {
+  .c0 {
+    color: blue;
+  }
+}
+
+<section
+  className="c0"
+>
+  test
+</section>
+`;
+
+exports[`Primitives Styled components Renders component with values from theme 1`] = `
+.c0 {
+  display: block;
+  background-color: dark-blue;
+  color: red;
+}
+
+@media (min-width:10) {
+  .c0 {
+    color: green;
+  }
+}
+
+@media (min-width:20) {
+  .c0 {
+    color: blue;
+  }
+}
+
+<div
+  className="c0"
+>
+  test
+</div>
+`;
+
+exports[`Primitives Styled components Renders component without theme 1`] = `
+.c0 {
+  display: block;
+  color: red;
+}
+
+<div
+  className="c0"
+>
+  test
+</div>
+`;
