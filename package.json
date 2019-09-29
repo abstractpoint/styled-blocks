@@ -14,11 +14,14 @@
   "main": "src/index.js",
   "scripts": {
     "lint": "eslint . --cache --fix",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "author": "George Tyshchenko // Abstractpoint",
   "license": "MIT",
   "devDependencies": {
+    "@babel/preset-env": "^7.6.2",
+    "@babel/preset-react": "^7.0.0",
+    "babel-jest": "^24.9.0",
     "bup": "^5.0.1",
     "eslint": "^6.4.0",
     "eslint-config-airbnb": "^18.0.1",
@@ -30,7 +33,10 @@
     "jest": "^24.9.0",
     "jest-styled-components": "^6.3.3",
     "lint-staged": ">=8",
-    "react-test-renderer": "^16.10.0"
+    "react": "^16.10.1",
+    "react-dom": "^16.10.1",
+    "react-test-renderer": "^16.10.0",
+    "styled-components": "^4.4.0"
   },
   "peerDependencies": {
     "styled-components": "^4.4.0"
@@ -45,5 +51,6 @@
       "eslint --fix",
       "git add"
     ]
-  }
+  },
+  "dependencies": {}
 }
