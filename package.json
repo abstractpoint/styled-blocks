@@ -1,6 +1,6 @@
 {
   "name": "styled-blocks",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Styled Component Primitives for rapid prototyping in React!",
   "keywords": [
     "flex",
@@ -11,10 +11,19 @@
     "css-in-js",
     "styled-components"
   ],
-  "main": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fausto95/styled-grid-component.git"
+  },
+  "main": "dist/styled-blocks.umd.js",
+  "module": "dist/blocks.es.js",
+  "entry": "src/index.js",
+  "files": ["dist"],
   "scripts": {
     "lint": "eslint . --cache --fix",
-    "test": "jest"
+    "test": "jest",
+    "build": "NODE_ENV=development bup",
+    "prepublish": "NODE_ENV=production bup"
   },
   "author": "George Tyshchenko // Abstractpoint",
   "license": "MIT",
