@@ -13,7 +13,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Fausto95/styled-grid-component.git"
+    "url": "git+https://github.com/abstractpoint/styled-blocks"
   },
   "main": "dist/styled-blocks.umd.js",
   "module": "dist/blocks.es.js",
