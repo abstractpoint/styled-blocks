@@ -13,8 +13,9 @@ No need to learn *yet another API*, you already know it. 🕶
 ```
 import { 
     Col, 
-    Grid, 
-    Inline, 
+    Grid,
+    Block,
+    Inline,
     InlineBlock, 
     InlineCol, 
     InlineRow, 
@@ -41,9 +42,9 @@ Box - has no style defined
 Block - display: block
 Inline - display: inline
 InlineBlock - display: inline-block
-Col/Row - flexbox FTW!
+Col/Row - flexbox with flex-sirection FTW!
 InlineRow/Col - same except inline flexbox
-Grid - CSS grid!
+Grid - CSS grid! 
 ```
 
 ## Theme 🎠
@@ -75,7 +76,7 @@ styled prop, for example:
 will be wrapped in media queries with corresponding
 breakpoints)
 
-Rest of the theme follows your rules, simply create object
+Rest of the theme follows your rules, simply create an object
 structure that suits you. The lookup works just like
 lodash *get* method, using dot notation. `c.primary.500` or 
 `shadow.1` for accessing arrays or objects in your theme:
