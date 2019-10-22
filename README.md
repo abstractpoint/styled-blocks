@@ -23,7 +23,7 @@ import {
 } from 'styled-blocks';
 
 <Block
-    _backgroundColor="c.primary.500"
+    _backgroundColor="c.primary.500" // see theming section for details about these values
     _boxShadow="shadow.1"
     ...
 ```
@@ -35,26 +35,45 @@ The primitives are:
 **Block, Box, Col, Grid, Inline, InlineBlock, 
 InlineCol, InlineRow, Row**
 
-All are *divs* by default: (Overridable using **as** prop)
+All are *divs* by default: (Overridable using **as** prop, see 'Extending' section)
 
 ```
-Box - has no style defined
-Block - display: block
-Inline - display: inline
-InlineBlock - display: inline-block
-Col/Row - flexbox with flex-sirection FTW!
-InlineRow/Col - same except inline flexbox
-Grid - CSS grid! 
+Box -  has no style defined
+Block - { display: block; }
+Inline - { display: inline; }
+InlineBlock - { display: inline-block; }
+Col/Row - { display: flex; flex-direction: column/row; } - flexbox with flex-direction FTW!
+InlineRow/Col - { display: inline-flex; flex-direction: column/row; } - same except inline flexbox
+Grid - { display: grid; } CSS grid! 
 ```
 
 ## Theme 🎠
 Theming follows styled components api, by doing:
 ```
 import { ThemeProvider } from 'styled-components'
+import yourTheme from './theme'
 <ThemeProvider theme={yourTheme}>
     <Block ... />
 </ThemeProvider>
 
+```
+```
+// theme.js
+export default {
+    breakpoints: ['30rem', '60rem'],
+    ...
+    c: {
+        primary: {
+            500: '#eebbdd',
+            600: '#11ee33',
+            700: '#33ff00',
+        }
+    },
+    shadow: [
+        '5px 10px #888888',
+        '7px 15px #999999',
+    ]
+}
 ```
 
 ## Breakpoints / Media Queries 🥞
@@ -83,20 +102,28 @@ lodash *get* method, using dot notation. `c.primary.500` or
 
 ```
 {
-    breakpoints: ['30rem', '60rem'],
-    ...
-    c: {
-        primary: {
-            500: '#eebbdd',
-            600: '#11ee33',
-            700: '#33ff00',
-        }
-    },
+...
     shadow: [
         '5px 10px #888888',
         '7px 15px #999999',
     ]
 }
+```
+## Extending
+Each primitive accepts 'as' prop, so if you need to add pseudo-classes or animations you can do this:
+```
+const HoverBlock = styled(div)`
+    :hover {
+        font-weight: bold;
+        background-color: ${({ theme }) => theme.c.primary['500']}; // theme also works here as expected
+    }
+`;
+...
+<Block 
+    as={HoverBlock}
+    _color="c.primary.700"
+    ...
+/>
 ```
 
 ## Inspired by 💖
