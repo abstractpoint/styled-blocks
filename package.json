@@ -1,6 +1,6 @@
 {
   "name": "styled-blocks",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Styled Component Primitives for rapid prototyping in React!",
   "keywords": [
     "flex",
@@ -15,12 +15,15 @@
     "type": "git",
     "url": "git+https://github.com/abstractpoint/styled-blocks"
   },
+  "sideEffects": false,
   "main": "dist/styled-blocks.umd.js",
   "module": "dist/blocks.es.js",
   "entry": "src/index.js",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "lint": "eslint . --cache --fix",
+    "lint": "eslint src --cache",
     "test": "jest",
     "build": "NODE_ENV=development bup",
     "prepublish": "NODE_ENV=production bup"
